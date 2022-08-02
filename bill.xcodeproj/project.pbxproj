@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121FA6AC287E1DB800E98613 /* RowCashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121FA6AB287E1DB800E98613 /* RowCashView.swift */; };
+		12216CFB2875BEDD00218E2A /* CashData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12216CFA2875BEDD00218E2A /* CashData.swift */; };
+		12B02C75287A426E009BDA0C /* CalcBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B02C74287A426E009BDA0C /* CalcBillView.swift */; };
+		12B02C77287A42E7009BDA0C /* ListCashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B02C76287A42E7009BDA0C /* ListCashView.swift */; };
 		12FF5AC72873145900F3F918 /* billApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FF5AC62873145900F3F918 /* billApp.swift */; };
 		12FF5AC92873145900F3F918 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FF5AC82873145900F3F918 /* ContentView.swift */; };
 		12FF5ACB2873145B00F3F918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12FF5ACA2873145B00F3F918 /* Assets.xcassets */; };
 		12FF5ACE2873145B00F3F918 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12FF5ACD2873145B00F3F918 /* Preview Assets.xcassets */; };
+		12FF5AD5287314B900F3F918 /* FileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FF5AD4287314B900F3F918 /* FileController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		121FA6AB287E1DB800E98613 /* RowCashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowCashView.swift; sourceTree = "<group>"; };
+		12216CFA2875BEDD00218E2A /* CashData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashData.swift; sourceTree = "<group>"; };
+		12B02C74287A426E009BDA0C /* CalcBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcBillView.swift; sourceTree = "<group>"; };
+		12B02C76287A42E7009BDA0C /* ListCashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCashView.swift; sourceTree = "<group>"; };
 		12FF5AC32873145900F3F918 /* bill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12FF5AC62873145900F3F918 /* billApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = billApp.swift; sourceTree = "<group>"; };
 		12FF5AC82873145900F3F918 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		12FF5ACA2873145B00F3F918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12FF5ACD2873145B00F3F918 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		12FF5AD4287314B900F3F918 /* FileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,11 @@
 			children = (
 				12FF5AC62873145900F3F918 /* billApp.swift */,
 				12FF5AC82873145900F3F918 /* ContentView.swift */,
+				12B02C74287A426E009BDA0C /* CalcBillView.swift */,
+				12B02C76287A42E7009BDA0C /* ListCashView.swift */,
+				121FA6AB287E1DB800E98613 /* RowCashView.swift */,
+				12FF5AD4287314B900F3F918 /* FileController.swift */,
+				12216CFA2875BEDD00218E2A /* CashData.swift */,
 				12FF5ACA2873145B00F3F918 /* Assets.xcassets */,
 				12FF5ACC2873145B00F3F918 /* Preview Content */,
 			);
@@ -137,8 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12216CFB2875BEDD00218E2A /* CashData.swift in Sources */,
+				12B02C75287A426E009BDA0C /* CalcBillView.swift in Sources */,
+				12FF5AD5287314B900F3F918 /* FileController.swift in Sources */,
 				12FF5AC92873145900F3F918 /* ContentView.swift in Sources */,
 				12FF5AC72873145900F3F918 /* billApp.swift in Sources */,
+				12B02C77287A42E7009BDA0C /* ListCashView.swift in Sources */,
+				121FA6AC287E1DB800E98613 /* RowCashView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

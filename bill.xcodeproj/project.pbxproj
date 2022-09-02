@@ -9,6 +9,19 @@
 /* Begin PBXBuildFile section */
 		121FA6AC287E1DB800E98613 /* RowCashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121FA6AB287E1DB800E98613 /* RowCashView.swift */; };
 		12216CFB2875BEDD00218E2A /* CashData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12216CFA2875BEDD00218E2A /* CashData.swift */; };
+		1277D7DD28BA0FB600251B4D /* AdMobViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7DC28BA0FB600251B4D /* AdMobViewModels.swift */; };
+		1277D7E028BC147C00251B4D /* InputEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7DF28BC147C00251B4D /* InputEventView.swift */; };
+		1277D7E228BC158400251B4D /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7E128BC158400251B4D /* EventData.swift */; };
+		1277D7E528BC17AC00251B4D /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7E428BC17AC00251B4D /* ButtonView.swift */; };
+		1277D7E728BCDBB200251B4D /* HistoryEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7E628BCDBB200251B4D /* HistoryEventView.swift */; };
+		1277D7E928BCDE2500251B4D /* RowEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7E828BCDE2500251B4D /* RowEventView.swift */; };
+		1277D7EB28BD68BD00251B4D /* MemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7EA28BD68BD00251B4D /* MemberView.swift */; };
+		1277D7ED28BD6B4800251B4D /* PickerMemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7EC28BD6B4700251B4D /* PickerMemberView.swift */; };
+		1277D7EF28BE569800251B4D /* CreateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7EE28BE569800251B4D /* CreateEvent.swift */; };
+		1277D7F328C0EDCF00251B4D /* EventNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7F228C0EDCF00251B4D /* EventNameView.swift */; };
+		1277D7F528C0F03100251B4D /* EntryCashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7F428C0F03100251B4D /* EntryCashView.swift */; };
+		1277D7F728C0F5F900251B4D /* EntryEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7F628C0F5F900251B4D /* EntryEventView.swift */; };
+		1277D7FB28C15F4900251B4D /* RewardButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7FA28C15F4900251B4D /* RewardButtonView.swift */; };
 		12B02C75287A426E009BDA0C /* CalcBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B02C74287A426E009BDA0C /* CalcBillView.swift */; };
 		12B02C77287A42E7009BDA0C /* ListCashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B02C76287A42E7009BDA0C /* ListCashView.swift */; };
 		12FF5AC72873145900F3F918 /* billApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FF5AC62873145900F3F918 /* billApp.swift */; };
@@ -16,11 +29,26 @@
 		12FF5ACB2873145B00F3F918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12FF5ACA2873145B00F3F918 /* Assets.xcassets */; };
 		12FF5ACE2873145B00F3F918 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12FF5ACD2873145B00F3F918 /* Preview Assets.xcassets */; };
 		12FF5AD5287314B900F3F918 /* FileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FF5AD4287314B900F3F918 /* FileController.swift */; };
+		327A1EE3E68118F9D4BADED8 /* Pods_bill.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81B507F6F8F7ECB0D6945818 /* Pods_bill.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		121FA6AB287E1DB800E98613 /* RowCashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowCashView.swift; sourceTree = "<group>"; };
 		12216CFA2875BEDD00218E2A /* CashData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashData.swift; sourceTree = "<group>"; };
+		1277D7DC28BA0FB600251B4D /* AdMobViewModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdMobViewModels.swift; sourceTree = "<group>"; };
+		1277D7DF28BC147C00251B4D /* InputEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputEventView.swift; sourceTree = "<group>"; };
+		1277D7E128BC158400251B4D /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
+		1277D7E428BC17AC00251B4D /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		1277D7E628BCDBB200251B4D /* HistoryEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryEventView.swift; sourceTree = "<group>"; };
+		1277D7E828BCDE2500251B4D /* RowEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowEventView.swift; sourceTree = "<group>"; };
+		1277D7EA28BD68BD00251B4D /* MemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberView.swift; sourceTree = "<group>"; };
+		1277D7EC28BD6B4700251B4D /* PickerMemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerMemberView.swift; sourceTree = "<group>"; };
+		1277D7EE28BE569800251B4D /* CreateEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEvent.swift; sourceTree = "<group>"; };
+		1277D7F228C0EDCF00251B4D /* EventNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventNameView.swift; sourceTree = "<group>"; };
+		1277D7F428C0F03100251B4D /* EntryCashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCashView.swift; sourceTree = "<group>"; };
+		1277D7F628C0F5F900251B4D /* EntryEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryEventView.swift; sourceTree = "<group>"; };
+		1277D7FA28C15F4900251B4D /* RewardButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardButtonView.swift; sourceTree = "<group>"; };
+		128FB38D289A9DD300A15091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		12B02C74287A426E009BDA0C /* CalcBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcBillView.swift; sourceTree = "<group>"; };
 		12B02C76287A42E7009BDA0C /* ListCashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCashView.swift; sourceTree = "<group>"; };
 		12FF5AC32873145900F3F918 /* bill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bill.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -29,6 +57,9 @@
 		12FF5ACA2873145B00F3F918 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12FF5ACD2873145B00F3F918 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		12FF5AD4287314B900F3F918 /* FileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileController.swift; sourceTree = "<group>"; };
+		52D972E50A217878DB626436 /* Pods-bill.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bill.debug.xcconfig"; path = "Target Support Files/Pods-bill/Pods-bill.debug.xcconfig"; sourceTree = "<group>"; };
+		81B507F6F8F7ECB0D6945818 /* Pods_bill.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bill.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBD0C0E0C7F179982DA28762 /* Pods-bill.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bill.release.xcconfig"; path = "Target Support Files/Pods-bill/Pods-bill.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,17 +67,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				327A1EE3E68118F9D4BADED8 /* Pods_bill.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07121198D89CA3441A519EC5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				81B507F6F8F7ECB0D6945818 /* Pods_bill.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1277D7DE28BA0FBA00251B4D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1277D7DC28BA0FB600251B4D /* AdMobViewModels.swift */,
+				12FF5AD4287314B900F3F918 /* FileController.swift */,
+				12216CFA2875BEDD00218E2A /* CashData.swift */,
+				1277D7E128BC158400251B4D /* EventData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1277D7E328BC177D00251B4D /* ViewComponent */ = {
+			isa = PBXGroup;
+			children = (
+				1277D7EA28BD68BD00251B4D /* MemberView.swift */,
+				1277D7EC28BD6B4700251B4D /* PickerMemberView.swift */,
+				1277D7F228C0EDCF00251B4D /* EventNameView.swift */,
+				1277D7E428BC17AC00251B4D /* ButtonView.swift */,
+				1277D7FA28C15F4900251B4D /* RewardButtonView.swift */,
+				1277D7E828BCDE2500251B4D /* RowEventView.swift */,
+				121FA6AB287E1DB800E98613 /* RowCashView.swift */,
+			);
+			path = ViewComponent;
+			sourceTree = "<group>";
+		};
 		12FF5ABA2873145900F3F918 = {
 			isa = PBXGroup;
 			children = (
 				12FF5AC52873145900F3F918 /* bill */,
 				12FF5AC42873145900F3F918 /* Products */,
+				E9628817176CDF7F2E745774 /* Pods */,
+				07121198D89CA3441A519EC5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,13 +128,18 @@
 		12FF5AC52873145900F3F918 /* bill */ = {
 			isa = PBXGroup;
 			children = (
+				128FB38D289A9DD300A15091 /* Info.plist */,
 				12FF5AC62873145900F3F918 /* billApp.swift */,
 				12FF5AC82873145900F3F918 /* ContentView.swift */,
+				1277D7EE28BE569800251B4D /* CreateEvent.swift */,
+				1277D7F428C0F03100251B4D /* EntryCashView.swift */,
+				1277D7F628C0F5F900251B4D /* EntryEventView.swift */,
+				1277D7DF28BC147C00251B4D /* InputEventView.swift */,
 				12B02C74287A426E009BDA0C /* CalcBillView.swift */,
 				12B02C76287A42E7009BDA0C /* ListCashView.swift */,
-				121FA6AB287E1DB800E98613 /* RowCashView.swift */,
-				12FF5AD4287314B900F3F918 /* FileController.swift */,
-				12216CFA2875BEDD00218E2A /* CashData.swift */,
+				1277D7E628BCDBB200251B4D /* HistoryEventView.swift */,
+				1277D7DE28BA0FBA00251B4D /* Models */,
+				1277D7E328BC177D00251B4D /* ViewComponent */,
 				12FF5ACA2873145B00F3F918 /* Assets.xcassets */,
 				12FF5ACC2873145B00F3F918 /* Preview Content */,
 			);
@@ -82,6 +154,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E9628817176CDF7F2E745774 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52D972E50A217878DB626436 /* Pods-bill.debug.xcconfig */,
+				DBD0C0E0C7F179982DA28762 /* Pods-bill.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -89,9 +170,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12FF5AD12873145B00F3F918 /* Build configuration list for PBXNativeTarget "bill" */;
 			buildPhases = (
+				34672BF062C74D8643CAF650 /* [CP] Check Pods Manifest.lock */,
 				12FF5ABF2873145900F3F918 /* Sources */,
 				12FF5AC02873145900F3F918 /* Frameworks */,
 				12FF5AC12873145900F3F918 /* Resources */,
+				065CACF3D1C650F1C737CC28 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -147,18 +230,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		065CACF3D1C650F1C737CC28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bill/Pods-bill-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-bill/Pods-bill-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-bill/Pods-bill-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		34672BF062C74D8643CAF650 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-bill-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		12FF5ABF2873145900F3F918 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1277D7E728BCDBB200251B4D /* HistoryEventView.swift in Sources */,
+				1277D7E028BC147C00251B4D /* InputEventView.swift in Sources */,
+				1277D7F528C0F03100251B4D /* EntryCashView.swift in Sources */,
+				1277D7EF28BE569800251B4D /* CreateEvent.swift in Sources */,
+				1277D7EB28BD68BD00251B4D /* MemberView.swift in Sources */,
 				12216CFB2875BEDD00218E2A /* CashData.swift in Sources */,
+				1277D7E228BC158400251B4D /* EventData.swift in Sources */,
 				12B02C75287A426E009BDA0C /* CalcBillView.swift in Sources */,
+				1277D7F728C0F5F900251B4D /* EntryEventView.swift in Sources */,
+				1277D7DD28BA0FB600251B4D /* AdMobViewModels.swift in Sources */,
 				12FF5AD5287314B900F3F918 /* FileController.swift in Sources */,
+				1277D7E528BC17AC00251B4D /* ButtonView.swift in Sources */,
 				12FF5AC92873145900F3F918 /* ContentView.swift in Sources */,
+				1277D7F328C0EDCF00251B4D /* EventNameView.swift in Sources */,
+				1277D7ED28BD6B4800251B4D /* PickerMemberView.swift in Sources */,
 				12FF5AC72873145900F3F918 /* billApp.swift in Sources */,
 				12B02C77287A42E7009BDA0C /* ListCashView.swift in Sources */,
+				1277D7FB28C15F4900251B4D /* RewardButtonView.swift in Sources */,
 				121FA6AC287E1DB800E98613 /* RowCashView.swift in Sources */,
+				1277D7E928BCDE2500251B4D /* RowEventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,15 +419,17 @@
 		};
 		12FF5AD22873145B00F3F918 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52D972E50A217878DB626436 /* Pods-bill.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.3;
 				DEVELOPMENT_ASSET_PATHS = "\"bill/Preview Content\"";
 				DEVELOPMENT_TEAM = CGD79LB65H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bill/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,8 +439,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ame.dev.bill;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ame.bill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -310,15 +450,17 @@
 		};
 		12FF5AD32873145B00F3F918 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBD0C0E0C7F179982DA28762 /* Pods-bill.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.3;
 				DEVELOPMENT_ASSET_PATHS = "\"bill/Preview Content\"";
 				DEVELOPMENT_TEAM = CGD79LB65H;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = bill/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -328,8 +470,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ame.dev.bill;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ame.bill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

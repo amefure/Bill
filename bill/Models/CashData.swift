@@ -16,6 +16,7 @@ struct CashData: Identifiable,Codable,Equatable {
     var id = UUID()             // 一意の値
     var cash:Int                // 金額情報
     var memo:String = ""        // MEMO
+    var member:String = ""      // メンバー
     var time:String = { // 初期値に現在の日付
         
         let df = DateFormatter()

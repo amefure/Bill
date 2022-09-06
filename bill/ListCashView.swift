@@ -11,45 +11,43 @@ struct ListCashView: View {
     let fileController = FileController()
     @Binding var displayCashData : [CashData]
     @EnvironmentObject  var allCashData:AllCashData
+    var eventItem: EventData?
     
-    var eventItem: EventData
+    @State var selectedMember:Int = -1  // Pickerで選択されたIndex
+    @State var isCorrect:Bool  = true   // 入力された金額が数値かどうか
     
     var body: some View {
         VStack {
-
-            if !eventItem.member.isEmpty {
+            
+            if eventItem != nil {
+                Text("\(eventItem!.time)").font(.custom("AppleSDGothicNeo-SemiBold", size: 15)).foregroundColor(.gray).lineLimit(1).offset(x: -100, y: 10)
                 VStack{
-                    EventNameView(eventName: eventItem.name)
-                    MemberView(memberArray: eventItem.member)
+                    EventNameView(eventName: eventItem!.name)
+                    MemberView(selectedMember: Binding.constant(-1),
+                               memberArray: eventItem!.member)
                 }.offset(x: 0, y: -40)
             }
             
+            
             List (displayCashData.reversed()) { item in
-                if eventItem.member.isEmpty {
-                    RowCashView(item: item)
-                    .swipeActions(edge: .trailing,allowsFullSwipe: false){
-                        Button(role:.destructive,action: {
-                            
-                            // リストの削除処理にゆっくりのアニメーション
-                            withAnimation(.linear(duration: 0.3)){
-                                allCashData.removeCash(item)   // 選択されたitemを削除
-                                fileController.updateJson(allCashData.allData) // JSONファイルを更新
-                                allCashData.setAllData() // JSONファイルをプロパティにセット
-                                allCashData.sumBill()
-                            }
-                            
-                        }, label: {
-                            Image(systemName: "trash")
-                        })
-                    }
+                if eventItem == nil {
+                    // 編集Inputの呼び出し
+                    NavigationLink(destination: {
+                        EditCashView(
+                            selectedMember: $selectedMember,      // 不要 入力された金額が数値かどうか
+                            item: item
+                        )
+                    }, label: {
+                        RowCashView(item: item)
+                    })
                 }else{
-                   
+                    
                     RowCashView(item: item)
                 }
-                 
-            }.listStyle(GroupedListStyle()) // Listのスタイルを横に広げる
-                .offset(x: 0, y: (eventItem.member.isEmpty ? 0 : -40))
                 
+            }.listStyle(GroupedListStyle()) // Listのスタイルを横に広げる
+                .offset(x: 0, y: (eventItem == nil ? 0 : -40))
+            
             AdMobBannerView().frame( height:30)
                 .padding(.bottom)
         }

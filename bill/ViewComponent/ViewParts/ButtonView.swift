@@ -19,7 +19,7 @@ struct ButtonView: View {
             parentFunction()
         }, label: {
             Text(text).frame(width: size)
-        }).padding()
+        }).padding(10)
             .background(disable ? Color.gray : Color("ThemaColor"))
             .cornerRadius(8)
             .foregroundColor(.white)

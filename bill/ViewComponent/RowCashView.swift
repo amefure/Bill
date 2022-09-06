@@ -18,8 +18,8 @@ struct RowCashView: View {
             VStack {
                 // 位置調整
                 Text("memo").font(.caption).foregroundColor(.gray).offset(x: 52, y: -16)
-                Text("\(item.time)").font(.caption).foregroundColor(.gray).offset(x: -10, y: 0)
-                Text("\(item.member)").font(.caption).foregroundColor(.gray).offset(x: -10, y: 0)
+                Text("\(item.time)").font(.caption).foregroundColor(.gray).offset(x: -10, y: -10)
+                Text("\(item.member)").font(.caption).foregroundColor(.gray).offset(x: -10, y: -10)
             }
         
             // 縦の線を表示

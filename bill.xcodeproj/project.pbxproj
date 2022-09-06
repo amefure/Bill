@@ -17,11 +17,16 @@
 		1277D7E928BCDE2500251B4D /* RowEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7E828BCDE2500251B4D /* RowEventView.swift */; };
 		1277D7EB28BD68BD00251B4D /* MemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7EA28BD68BD00251B4D /* MemberView.swift */; };
 		1277D7ED28BD6B4800251B4D /* PickerMemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7EC28BD6B4700251B4D /* PickerMemberView.swift */; };
-		1277D7EF28BE569800251B4D /* CreateEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7EE28BE569800251B4D /* CreateEvent.swift */; };
+		1277D7EF28BE569800251B4D /* CreateEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7EE28BE569800251B4D /* CreateEventView.swift */; };
 		1277D7F328C0EDCF00251B4D /* EventNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7F228C0EDCF00251B4D /* EventNameView.swift */; };
 		1277D7F528C0F03100251B4D /* EntryCashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7F428C0F03100251B4D /* EntryCashView.swift */; };
-		1277D7F728C0F5F900251B4D /* EntryEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7F628C0F5F900251B4D /* EntryEventView.swift */; };
+		1277D7F728C0F5F900251B4D /* EntryEventButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7F628C0F5F900251B4D /* EntryEventButtonView.swift */; };
 		1277D7FB28C15F4900251B4D /* RewardButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7FA28C15F4900251B4D /* RewardButtonView.swift */; };
+		1277D7FF28C23A6900251B4D /* RouletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D7FE28C23A6900251B4D /* RouletteView.swift */; };
+		1277D80128C439BD00251B4D /* CalcBillMemberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D80028C439BD00251B4D /* CalcBillMemberView.swift */; };
+		1277D80328C4D63200251B4D /* EditCashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D80228C4D63200251B4D /* EditCashView.swift */; };
+		1277D80528C4DCD100251B4D /* InputCashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D80428C4DCD100251B4D /* InputCashView.swift */; };
+		1277D80728C755FB00251B4D /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1277D80628C755FA00251B4D /* InputView.swift */; };
 		12B02C75287A426E009BDA0C /* CalcBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B02C74287A426E009BDA0C /* CalcBillView.swift */; };
 		12B02C77287A42E7009BDA0C /* ListCashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B02C76287A42E7009BDA0C /* ListCashView.swift */; };
 		12FF5AC72873145900F3F918 /* billApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FF5AC62873145900F3F918 /* billApp.swift */; };
@@ -43,11 +48,16 @@
 		1277D7E828BCDE2500251B4D /* RowEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowEventView.swift; sourceTree = "<group>"; };
 		1277D7EA28BD68BD00251B4D /* MemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberView.swift; sourceTree = "<group>"; };
 		1277D7EC28BD6B4700251B4D /* PickerMemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerMemberView.swift; sourceTree = "<group>"; };
-		1277D7EE28BE569800251B4D /* CreateEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEvent.swift; sourceTree = "<group>"; };
+		1277D7EE28BE569800251B4D /* CreateEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventView.swift; sourceTree = "<group>"; };
 		1277D7F228C0EDCF00251B4D /* EventNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventNameView.swift; sourceTree = "<group>"; };
 		1277D7F428C0F03100251B4D /* EntryCashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryCashView.swift; sourceTree = "<group>"; };
-		1277D7F628C0F5F900251B4D /* EntryEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryEventView.swift; sourceTree = "<group>"; };
+		1277D7F628C0F5F900251B4D /* EntryEventButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryEventButtonView.swift; sourceTree = "<group>"; };
 		1277D7FA28C15F4900251B4D /* RewardButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardButtonView.swift; sourceTree = "<group>"; };
+		1277D7FE28C23A6900251B4D /* RouletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouletteView.swift; sourceTree = "<group>"; };
+		1277D80028C439BD00251B4D /* CalcBillMemberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcBillMemberView.swift; sourceTree = "<group>"; };
+		1277D80228C4D63200251B4D /* EditCashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = EditCashView.swift; path = /Users/s/Desktop/SwiftApp/bill/bill/EditCashView.swift; sourceTree = "<absolute>"; };
+		1277D80428C4DCD100251B4D /* InputCashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputCashView.swift; sourceTree = "<group>"; };
+		1277D80628C755FA00251B4D /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		128FB38D289A9DD300A15091 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		12B02C74287A426E009BDA0C /* CalcBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcBillView.swift; sourceTree = "<group>"; };
 		12B02C76287A42E7009BDA0C /* ListCashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCashView.swift; sourceTree = "<group>"; };
@@ -97,14 +107,24 @@
 			isa = PBXGroup;
 			children = (
 				1277D7EA28BD68BD00251B4D /* MemberView.swift */,
-				1277D7EC28BD6B4700251B4D /* PickerMemberView.swift */,
 				1277D7F228C0EDCF00251B4D /* EventNameView.swift */,
-				1277D7E428BC17AC00251B4D /* ButtonView.swift */,
+				1277D7F628C0F5F900251B4D /* EntryEventButtonView.swift */,
 				1277D7FA28C15F4900251B4D /* RewardButtonView.swift */,
 				1277D7E828BCDE2500251B4D /* RowEventView.swift */,
 				121FA6AB287E1DB800E98613 /* RowCashView.swift */,
+				1277D80828C768D200251B4D /* ViewParts */,
 			);
 			path = ViewComponent;
+			sourceTree = "<group>";
+		};
+		1277D80828C768D200251B4D /* ViewParts */ = {
+			isa = PBXGroup;
+			children = (
+				1277D80628C755FA00251B4D /* InputView.swift */,
+				1277D7E428BC17AC00251B4D /* ButtonView.swift */,
+				1277D7EC28BD6B4700251B4D /* PickerMemberView.swift */,
+			);
+			path = ViewParts;
 			sourceTree = "<group>";
 		};
 		12FF5ABA2873145900F3F918 = {
@@ -131,11 +151,14 @@
 				128FB38D289A9DD300A15091 /* Info.plist */,
 				12FF5AC62873145900F3F918 /* billApp.swift */,
 				12FF5AC82873145900F3F918 /* ContentView.swift */,
-				1277D7EE28BE569800251B4D /* CreateEvent.swift */,
+				1277D7EE28BE569800251B4D /* CreateEventView.swift */,
 				1277D7F428C0F03100251B4D /* EntryCashView.swift */,
-				1277D7F628C0F5F900251B4D /* EntryEventView.swift */,
+				1277D80428C4DCD100251B4D /* InputCashView.swift */,
 				1277D7DF28BC147C00251B4D /* InputEventView.swift */,
 				12B02C74287A426E009BDA0C /* CalcBillView.swift */,
+				1277D80028C439BD00251B4D /* CalcBillMemberView.swift */,
+				1277D80228C4D63200251B4D /* EditCashView.swift */,
+				1277D7FE28C23A6900251B4D /* RouletteView.swift */,
 				12B02C76287A42E7009BDA0C /* ListCashView.swift */,
 				1277D7E628BCDBB200251B4D /* HistoryEventView.swift */,
 				1277D7DE28BA0FBA00251B4D /* Models */,
@@ -277,25 +300,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1277D80128C439BD00251B4D /* CalcBillMemberView.swift in Sources */,
 				1277D7E728BCDBB200251B4D /* HistoryEventView.swift in Sources */,
 				1277D7E028BC147C00251B4D /* InputEventView.swift in Sources */,
 				1277D7F528C0F03100251B4D /* EntryCashView.swift in Sources */,
-				1277D7EF28BE569800251B4D /* CreateEvent.swift in Sources */,
+				1277D7EF28BE569800251B4D /* CreateEventView.swift in Sources */,
 				1277D7EB28BD68BD00251B4D /* MemberView.swift in Sources */,
 				12216CFB2875BEDD00218E2A /* CashData.swift in Sources */,
 				1277D7E228BC158400251B4D /* EventData.swift in Sources */,
+				1277D80528C4DCD100251B4D /* InputCashView.swift in Sources */,
 				12B02C75287A426E009BDA0C /* CalcBillView.swift in Sources */,
-				1277D7F728C0F5F900251B4D /* EntryEventView.swift in Sources */,
+				1277D7F728C0F5F900251B4D /* EntryEventButtonView.swift in Sources */,
 				1277D7DD28BA0FB600251B4D /* AdMobViewModels.swift in Sources */,
 				12FF5AD5287314B900F3F918 /* FileController.swift in Sources */,
 				1277D7E528BC17AC00251B4D /* ButtonView.swift in Sources */,
 				12FF5AC92873145900F3F918 /* ContentView.swift in Sources */,
 				1277D7F328C0EDCF00251B4D /* EventNameView.swift in Sources */,
 				1277D7ED28BD6B4800251B4D /* PickerMemberView.swift in Sources */,
+				1277D80728C755FB00251B4D /* InputView.swift in Sources */,
 				12FF5AC72873145900F3F918 /* billApp.swift in Sources */,
 				12B02C77287A42E7009BDA0C /* ListCashView.swift in Sources */,
 				1277D7FB28C15F4900251B4D /* RewardButtonView.swift in Sources */,
 				121FA6AC287E1DB800E98613 /* RowCashView.swift in Sources */,
+				1277D7FF28C23A6900251B4D /* RouletteView.swift in Sources */,
+				1277D80328C4D63200251B4D /* EditCashView.swift in Sources */,
 				1277D7E928BCDE2500251B4D /* RowEventView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,7 +452,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3;
+				CURRENT_PROJECT_VERSION = 1.7;
 				DEVELOPMENT_ASSET_PATHS = "\"bill/Preview Content\"";
 				DEVELOPMENT_TEAM = CGD79LB65H;
 				ENABLE_PREVIEWS = YES;
@@ -439,7 +467,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ame.bill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -455,7 +483,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3;
+				CURRENT_PROJECT_VERSION = 1.7;
 				DEVELOPMENT_ASSET_PATHS = "\"bill/Preview Content\"";
 				DEVELOPMENT_TEAM = CGD79LB65H;
 				ENABLE_PREVIEWS = YES;
@@ -470,7 +498,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ame.bill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

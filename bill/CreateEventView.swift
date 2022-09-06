@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CreateEvent: View {
+struct CreateEventView: View {
     // MARK: - プロパティ
     @Binding var isEvent:Bool// 旅行イベントを作成したかどうか
     @Binding var memberArray:[String]  // 入力されたイベント名
@@ -26,7 +26,7 @@ struct CreateEvent: View {
 }
 struct CreateEvent_Previews: PreviewProvider {
     static var previews: some View {
-        CreateEvent(isEvent: Binding.constant(true), memberArray:  Binding.constant([]))
+        CreateEventView(isEvent: Binding.constant(true), memberArray:  Binding.constant([]))
     }
 }
 

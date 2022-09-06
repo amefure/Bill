@@ -7,20 +7,22 @@
 
 import SwiftUI
 
-struct EntryEventView: View {
+struct EntryEventButtonView: View {
     
     // MARK: - Environment > インスタンス
     @EnvironmentObject  var allCashData:AllCashData
     @EnvironmentObject var allEventData:AllEventData
     
     let fileController = FileController()
-
+    
     
     // MARK: - View
-    @State var isAlert:Bool = false // アラート
-    @State var isLimitAlert:Bool = false // アラート
+    @State var isAlert:Bool = false             // 保存ポップアップアラート
+    @State var isLimitAlert:Bool = false        // 保存制限ポップアップアラート
+    @State var isSuccessEventAlert:Bool = false // 保存成功ポップアップアラート
     
-    @Binding var eventName:String  // イベント名
+    
+    @Binding var eventName:String      // イベント名
     @Binding var memberArray:[String]  // @AppStorage("member")の配列形式
     
     // MARK: - メソッド
@@ -37,7 +39,7 @@ struct EntryEventView: View {
                         let eventData = EventData(name: eventName, member: memberArray, cashData: allCashData.allData)
                         // 構造体を保存
                         fileController.saveEventJson(eventData)
-                        parentStorageResetFunction()
+                        isSuccessEventAlert = true
                     }
                     
                 }, label: {
@@ -59,11 +61,19 @@ struct EntryEventView: View {
                       message: Text("広告を視聴すると\nイベントの枠を増やすことができます。"),
                       dismissButton: .default(Text("OK")))
             }
+            .alert("「イベント:\(eventName)」を\n保存しました",isPresented:$isSuccessEventAlert) {
+                Button(action: {
+                    parentStorageResetFunction()
+                    
+                }, label: {
+                    Text("OK")
+                })
+            }
     }
 }
 
 struct EntryEventView_Previews: PreviewProvider {
     static var previews: some View {
-        EntryEventView(eventName: Binding.constant(""), memberArray: Binding.constant([]),parentStorageResetFunction: {})
+        EntryEventButtonView(eventName: Binding.constant(""), memberArray: Binding.constant([]),parentStorageResetFunction: {})
     }
 }

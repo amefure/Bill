@@ -72,5 +72,10 @@ class AllCashData:ObservableObject{
         guard let index = allData.firstIndex(of:item) else { return }
         allData.remove(at: index)
     }
+    // 編集されたデータを共有しているクラスのプロパティにupdate
+    func updateLocation(_ item:CashData,_ id:UUID){
+        guard let index = allData.firstIndex(where: { $0.id == id }) else { return }
+        self.allData[index] = item
+    }
 }
 

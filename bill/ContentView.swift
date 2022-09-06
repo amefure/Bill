@@ -47,9 +47,9 @@ struct ContentView: View {
             // MARK: - タブ1 イベント作成画面 or 登録画面
             Group{
                 if !isEvent {
-                   CreateEvent(isEvent: $isEvent, memberArray: $memberArray)
+                   CreateEventView(isEvent: $isEvent, memberArray: $memberArray)
                 }else{
-                    EntryCashView(eventName:$eventName,memberArray:$memberArray,parentStorageResetFunction:storageReset).environmentObject(allCashData).environmentObject(allEventData)
+                   EntryCashView(eventName:$eventName,memberArray:$memberArray,parentStorageResetFunction:storageReset).environmentObject(allCashData).environmentObject(allEventData)
                 }
             }
             .tabItem{

@@ -8,86 +8,97 @@
 import SwiftUI
 
 struct CalcBillView: View {
-    
-    // プロパティ------------------------------------------------------
-    @State var people:Int = 1  // 割り勘にする人数を格納 初期値1 イベント有→メンバーの数
-    @State var rouletteResult:String = "" // 割り勘にするメンバー名を格納
-    @FocusState var isActive:Bool   // キーボードフォーカス
-    
+    // MARK: -　Environment
     @EnvironmentObject var allCashData:AllCashData
     @EnvironmentObject var allEventData:AllEventData
+    
+    // MARK: -　プロパティ
+    @State var people:Int = 1         // 割り勘にする人数を格納 初期値1 イベント有→メンバーの数
+    @State var customStr:String = ""  // カスタム人数を格納
+    @State var rouletteResult:String = "" // 割り勘にするメンバー名を格納
+    @State var isLink:Bool = false
     @Binding var memberArray:[String] // @AppStorage("member")の配列形式
     
-    // 関数-----------------------------------------------------------
-
-    func rouletteStart(){
-        if !memberArray.contains(where: {$0 == "割り勘"}){
-            memberArray.append("割り勘")
-          
-        }
-        var timer = Timer()
-        var timer2 = Timer()
-        var stop = false
-        timer2 = Timer.scheduledTimer(withTimeInterval: 0.05, repeats: true){ _ in
-            rouletteResult = String(memberArray.randomElement()!)
-            timer = Timer.scheduledTimer(withTimeInterval: 4, repeats: true){ _ in
-                stop = true
-            }
-            if stop {
-                
-                timer.invalidate() // タイマーストップ
-                timer2.invalidate() // タイマーストップ
-                memberArray.removeAll(where: {$0 == "割り勘"})
-            }
+    // MARK: - FocusState
+    @FocusState var isActive:Bool   // キーボードフォーカス
+    // MARK: -　メソッド
+    func setPeople(_ str:String){
+        let num = changeNum(str)
+        if num > 0 {
+            people = num
         }
     }
     
-    // 関数-----------------------------------------------------------
+    func changeNum(_ text:String) -> Int{
+        guard let num = Int(text) else{
+            return 0
+        }
+        return num
+    }
     
     var body: some View {
-        
-        
         VStack {
-            
             
             HStack {
                 Text("合計：")
                 Text("¥\(allCashData.bill)").font(.custom("AppleSDGothicNeo-SemiBold", size: 50)).foregroundColor(.gray).lineLimit(1)
             }.padding()
+            
             HStack {
-//                if rouletteResult == "割り勘" || rouletteResult == "" {
-                    Text("\(people)人で割ると.....").foregroundColor(.gray)
-//                }else{
-//                    Text("\(rouletteResult)の負担額は...")
-//                }
-                
+                Text("\(people)人で割ると.....").foregroundColor(.gray)
+    
             }.padding()
+            
             HStack {
                 Text("1人：")
                 
                 Text("¥\(allCashData.bill / people)").font(.custom("AppleSDGothicNeo-SemiBold", size: 50)).foregroundColor(.gray).lineLimit(1)
+                
+                NavigationLink(destination: {CalcBillMemberView(memberArray: $memberArray)}, label: {
+                    
+                    Image(systemName: "person.text.rectangle")
+                })
             }.padding()
             
-            ButtonView(parentFunction: {rouletteStart()}, text: "ルーレットスタート", disable: Binding.constant(memberArray == [""]), size: 200)
+            NavigationLink(isActive: $isLink,destination: {RouletteView(rouletteResult: $rouletteResult, memberArray: $memberArray)}, label: {
+                ButtonView(parentFunction: {isLink = true}, text: "ルーレットスタート", disable: Binding.constant(false), size: 200)
+            })
             
-            if rouletteResult != ""{
-                if rouletteResult == "割り勘" {
-                    Text("仲良く\(rouletteResult)しましょう..")
-                }else{
-                    Text("\(rouletteResult)の全額奢り！")
-                }
-                
-            }
+            VStack {
+                Text("割り勘する人数(カスタム)").foregroundColor(.gray)
+                TextField("人", text: $customStr)
+                    .keyboardType(.numberPad)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .multilineTextAlignment(.trailing)
+                    .frame(width: 200)
+                    .focused($isActive)
 
-          
+            }.toolbar{
+                ToolbarItemGroup(placement: .keyboard, content: {
+                    Spacer()
+                    Button("閉じる"){
+                        isActive = false
+                    }
+                })
+            }
+            
+            Button(action: {
+                setPeople(customStr)
+            }, label: {
+                Text("確定")
+            })
+            
+            
+            
         }.frame( maxWidth: .infinity, maxHeight: .infinity)
             .padding(.bottom)
             .ignoresSafeArea()
+            .accentColor(.orange)
             .onAppear(){
                 people = memberArray.count
                 rouletteResult = ""
             }
-            
+        
     }
 }
 

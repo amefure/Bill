@@ -39,13 +39,13 @@ struct InputEventView: View {
                     memberArray.append("")
                 }, label: {
                     Image(systemName: "person.fill.badge.plus")
-                }).foregroundColor(.orange).padding(5)
+                }).foregroundColor(.orange).padding(5).font(.system(size: 20))
                 
                 Button(action: {
                     memberArray.removeLast()
                 }, label: {
                     Image(systemName: "person.fill.badge.minus")
-                }).foregroundColor(memberArray.count == 1  ? .gray : .red).padding(5).disabled(memberArray.count == 1)
+                }).foregroundColor(memberArray.count == 1  ? .gray : .red).padding(5).font(.system(size: 20)).disabled(memberArray.count == 1)
             }
             ScrollView{
                 
